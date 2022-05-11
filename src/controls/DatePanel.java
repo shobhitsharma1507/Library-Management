@@ -142,6 +142,7 @@ public class DatePanel extends javax.swing.JPanel {
             if (jcbYear.getSelectedIndex() > 0 && jcbMonth.getSelectedIndex() > 0 && jcbDate.getSelectedIndex() > 0) {
                 int year = Integer.parseInt(jcbYear.getSelectedItem().toString());
                 int month = jcbMonth.getSelectedIndex();
+                
                 int date = jcbDate.getSelectedIndex();
                 String date_string = year + "-" + month + "-" + date;
                 selected_date = Date.valueOf(date_string);
